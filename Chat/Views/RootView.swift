@@ -9,14 +9,14 @@ import SwiftUI
 
 struct RootView: View {
     
+    @State private var isSignedIn: Bool = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if isSignedIn{
+            MainView(isSignedIn: $isSignedIn)
+        } else {
+            AuthView(isSignedIn: $isSignedIn)
         }
-        .padding()
     }
     
 }

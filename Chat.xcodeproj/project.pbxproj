@@ -11,6 +11,12 @@
 		8012783B2C32DDEA00F176A7 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8012783A2C32DDEA00F176A7 /* RootView.swift */; };
 		8012783D2C32DDEB00F176A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8012783C2C32DDEB00F176A7 /* Assets.xcassets */; };
 		801278402C32DDEB00F176A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8012783F2C32DDEB00F176A7 /* Preview Assets.xcassets */; };
+		80903A632C3432FF00FEB216 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80903A622C3432FF00FEB216 /* AuthView.swift */; };
+		80903A652C34332C00FEB216 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80903A642C34332C00FEB216 /* SignInView.swift */; };
+		80903A6A2C3437E000FEB216 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80903A692C3437E000FEB216 /* ViewExtension.swift */; };
+		80903A6C2C34399200FEB216 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80903A6B2C34399200FEB216 /* SignUpView.swift */; };
+		80903A6E2C343A9300FEB216 /* PhoneNumberVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80903A6D2C343A9300FEB216 /* PhoneNumberVerificationView.swift */; };
+		80903A712C34409900FEB216 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80903A702C34409900FEB216 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		8012783A2C32DDEA00F176A7 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		8012783C2C32DDEB00F176A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8012783F2C32DDEB00F176A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		80903A622C3432FF00FEB216 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		80903A642C34332C00FEB216 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		80903A692C3437E000FEB216 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		80903A6B2C34399200FEB216 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		80903A6D2C343A9300FEB216 /* PhoneNumberVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVerificationView.swift; sourceTree = "<group>"; };
+		80903A702C34409900FEB216 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,8 @@
 		8011BC922C32E0A00012A739 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				80903A612C3432F800FEB216 /* Auth */,
+				80903A6F2C34409000FEB216 /* Main */,
 				8012783A2C32DDEA00F176A7 /* RootView.swift */,
 			);
 			path = Views;
@@ -61,6 +75,7 @@
 			children = (
 				801278382C32DDEA00F176A7 /* ChatApp.swift */,
 				8011BC922C32E0A00012A739 /* Views */,
+				80903A662C3437BA00FEB216 /* Helpers */,
 				8012783C2C32DDEB00F176A7 /* Assets.xcassets */,
 				8012783E2C32DDEB00F176A7 /* Preview Content */,
 			);
@@ -73,6 +88,41 @@
 				8012783F2C32DDEB00F176A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		80903A612C3432F800FEB216 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				80903A622C3432FF00FEB216 /* AuthView.swift */,
+				80903A642C34332C00FEB216 /* SignInView.swift */,
+				80903A6B2C34399200FEB216 /* SignUpView.swift */,
+				80903A6D2C343A9300FEB216 /* PhoneNumberVerificationView.swift */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		80903A662C3437BA00FEB216 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				80903A682C3437D800FEB216 /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		80903A682C3437D800FEB216 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80903A692C3437E000FEB216 /* ViewExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		80903A6F2C34409000FEB216 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				80903A702C34409900FEB216 /* MainView.swift */,
+			);
+			name = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +196,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8012783B2C32DDEA00F176A7 /* RootView.swift in Sources */,
+				80903A712C34409900FEB216 /* MainView.swift in Sources */,
 				801278392C32DDEA00F176A7 /* ChatApp.swift in Sources */,
+				80903A652C34332C00FEB216 /* SignInView.swift in Sources */,
+				80903A632C3432FF00FEB216 /* AuthView.swift in Sources */,
+				80903A6E2C343A9300FEB216 /* PhoneNumberVerificationView.swift in Sources */,
+				80903A6C2C34399200FEB216 /* SignUpView.swift in Sources */,
+				80903A6A2C3437E000FEB216 /* ViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
